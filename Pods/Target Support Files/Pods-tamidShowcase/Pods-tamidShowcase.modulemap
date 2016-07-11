@@ -1,0 +1,6 @@
+framework module Pods_tamidShowcase {
+  umbrella header "Pods-tamidShowcase-umbrella.h"
+
+  export *
+  module * { export * }
+}

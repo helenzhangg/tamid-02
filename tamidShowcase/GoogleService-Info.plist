@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>665773696789-9gkc1c87cg0l0defr3v754h8f0eek582.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.665773696789-9gkc1c87cg0l0defr3v754h8f0eek582</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBUEyeS-3eqR6Fqm85X9t5iiSw9DUHPleE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>665773696789</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.test.tamidShowcase</string>
+	<key>PROJECT_ID</key>
+	<string>tamid-da82c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tamid-da82c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:665773696789:ios:e42697e6c253faa9</string>
+	<key>DATABASE_URL</key>
+	<string>https://tamid-da82c.firebaseio.com</string>
+</dict>
+</plist>
