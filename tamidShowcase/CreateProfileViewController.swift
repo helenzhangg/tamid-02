@@ -27,10 +27,10 @@ class createProfileViewController: UIViewController {
         super.viewDidAppear(animated)
 
     }
-    override func viewDidLoad() {
-        emailText.text = FIRAuth.auth()?.currentUser?.email
+  //  override func viewDidLoad() {
+    //    emailText.text = FIRAuth.auth()?.currentUser?.email
     
-    }
+   // }
 
     
     @IBAction func cancelDidTouch(sender: rounded_buttons) {

@@ -24,6 +24,10 @@ class DataService {
     private var _REF_POSTS = rootRef.child("posts")
     private var _REF_USERS = rootRef.child("users")
     private var _REF_IMAGES = URL_STORAGE.child("images")
+  //  private var _USER_UID = rootRef.child("users").child(userID)
+    
+    let userID = FIRAuth.auth()?.currentUser?.uid
+    
     
     var REF_BASE: FIRDatabaseReference {
         return _REF_BASE
@@ -41,7 +45,24 @@ class DataService {
         return _REF_IMAGES
     }
     
-    func createFirebaseUser(uid: String, user: Dictionary<String, String >) {
-        REF_USERS.child(uid).setValue(user)
+    var REF_USER_CURRENT: FIRDatabaseReference {
+        
+        //let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String
+        //let user = rootRef.child("users").child(uid)
+        //return user
+        
+        let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String
+        let user = _REF_USERS.child(userID!)
+        return user
     }
+    
+    func getCurrentUser() {
+        
+        let user = FIRAuth.auth()?.currentUser
+        let uid = user?.uid
+    }
+    
+    //func createFirebaseUser(uid: String, user: Dictionary<String, String >) {
+      //  REF_USERS.child(uid).setValue(user)
+  //  }
 }

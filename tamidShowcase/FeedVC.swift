@@ -154,21 +154,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     
                 })
                 
-            } //else {
-                
-                //self.postToFirebase(imgLink)
-            //}
+            }
             
         }
     }
-
-   // private func registePostIntoDatabase() {
-        
-     //   let ref = DataService.ds.REF_BASE
-       // let refPic = DataService.ds.REF_IMAGES
-       // let refPost = DataService.ds.REF_POSTS
-   // }
-
 
     func postToFirebase(imgUrl: String?) {
         

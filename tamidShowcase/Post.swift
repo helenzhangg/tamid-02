@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 class Post {
     
@@ -15,6 +16,7 @@ class Post {
     private var _likes: Int!
     private var _username: String!
     private var _postKey: String!
+    private var _postRef: FIRDatabaseReference!
     
     
     // var without a '?' at the end assumes there is an existing value
@@ -33,6 +35,10 @@ class Post {
     
     var username: String {
         return _username
+    }
+    
+    var postKey: String {
+        return _postKey
     }
     
     // dictionary for new posts
@@ -59,6 +65,24 @@ class Post {
         if let desc = dictionary["description"] as? String {
             self._postDescription = desc
         }
+        
+        self._postRef = DataService.ds.REF_POSTS.child(self._postKey)
+    }
+    
+    func adjustLikes(addLike: Bool) {
+        
+        if addLike {
+            
+            _likes = _likes + 1
+            
+        } else {
+            
+            _likes = _likes - 1
+        }
+        
+        // grabbing current likes value and replacing it with new likes value 
+        
+        _postRef.child("likes").setValue(_likes)
     }
     
 }
